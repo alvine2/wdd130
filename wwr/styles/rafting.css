@@ -13,7 +13,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--secondary-color);
     color: #333;
     display: flex;
@@ -31,7 +31,6 @@ header {
 
 .logo {
     height: 50px;
-    margin-right: 20px;
 }
 
 nav {
@@ -52,7 +51,7 @@ nav a:hover {
 
 /* Main Content */
 main {
-    flex: 1; /* Pushes footer to the bottom */
+    flex: 1;
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
@@ -162,4 +161,11 @@ footer p {
 
 .social-icons a:hover {
     color: #ccc;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
