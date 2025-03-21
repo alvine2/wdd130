@@ -169,3 +169,79 @@ footer p {
     margin: 0 10px;
     text-decoration: none;
 }
+
+
+/*contact form*/
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: var(--primary-color);
+    color: var(--accent-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #002244;
+}
+
+/* Employee Section */
+.employees {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employee-grid figure {
+    text-align: center;
+    width: 30%;
+}
+
+.employee-grid img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.employee-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
