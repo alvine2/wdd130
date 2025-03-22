@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kinyera Alvine | WDD 130 | Software Engineering student learning web development.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="author" content="Kinyera Alvine">
     <link rel="stylesheet" href="styles.css">
     <title>KINYERA ALVINE | WDD 130</title>
@@ -11,25 +12,52 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/about.html">About Me</a>
-            <a href="wwr">Services</a>
-            <a href="#">Contact</a>
+            <img src="wwr/images/logo.jpg" class="logo">
+            <a href="index.html" class="active">Home</a>
+            <a href="wwr/about.html">About</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="wwr/contact.html">Contact</a>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Exploring the world of Software Engineering & Web Development.</p>
+            <a href="wwr/about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
     <main>
-        <h2>Welcome to my WDD130 Portfolio</h2>
-        <img src="./wwr/images/Profile.jpeg" alt="Kinyera Alvine's profile picture">
-        <p>Hello! My name is Kinyera Alvine. I am a software engineering student at BYU-Pathway Worldwide. I love coding, web development, and problem-solving.</p>
-        <p>I'm excited to learn and grow in web development through WDD 130. My goal is to become a skilled developer and build useful projects.</p>
+        <section class="intro">
+            <div class="profile">
+                <img src="./wwr/images/Profile.jpeg" alt="Kinyera Alvine's profile picture">
+            </div>
+            <div class="bio">
+                <h2>Hi, I'm Kinyera Alvine</h2>
+                <p>A passionate software engineering student at BYU-Pathway Worldwide. I specialize in coding, web development, and problem-solving.</p>
+                <p>Join me on this journey as I build projects and develop my skills in WDD 130.</p>
+            </div>
+        </section>
+
+        <section class="discover">
+            <h2>Discover Uganda</h2>
+            <div class="uganda">
+                <img src="./wwr/images/uganda.jpeg" alt="Beautiful landscape of Uganda">
+                <p>Uganda, known as the 'Pearl of Africa,' is a country rich in culture, breathtaking landscapes, and incredible wildlife. From the mighty Nile River to lush national parks, Uganda is a land of adventure.</p>
+            </div>
+        </section>
     </main>
-     <aside>
-        <h2>Uganda</h2>
-        <img src="./wwr/images/uganda.jpeg" alt="Uganda">
-        <p>Uganda, known as the 'Pearl of Africa,' is a beautiful country with diverse landscapes, rich culture, and incredible wildlife, including the mountain gorillas.</p>
-    </aside>
+
     <footer>
         <p>&copy; 2025 🌍 Kinyera Alvine 🌍 Uganda</p>
+        <p>&copy; 2024 Rafting Adventures | KINYERA ALVINE</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 </html>
