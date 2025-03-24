@@ -47,7 +47,7 @@ nav a.active {
 
 /* Hero Section */
 .hero {
-    background: url('/wwr/images/trips.jpg') center/cover no-repeat;
+    background: url('../images/extreme-rafting.jpg') center/cover no-repeat;
     color: rgb(255, 255, 255);
     padding: 100px 20px;
     text-align: center;
