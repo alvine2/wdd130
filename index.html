@@ -3,56 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kinyera Alvine | WDD 130 | Software Engineering student learning web development.">
+    <meta name="description" content="Rafting Adventures offers exciting white water rafting experiences for all skill levels. Explore our trips and book your adventure today.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="author" content="Kinyera Alvine">
     <link rel="stylesheet" href="styles.css">
-    <title>KINYERA ALVINE | WDD 130</title>
+    <title>Rafting Adventures | Home</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="wwr/images/logo.jpg" class="logo">
+            <img src="wwr/images/logo.jpg" alt="Rafting Adventures Logo" class="logo">
             <a href="index.html" class="active">Home</a>
             <a href="wwr/about.html">About</a>
             <a href="wwr/trips.html">Trips</a>
             <a href="wwr/contact.html">Contact</a>
         </nav>
     </header>
-
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Exploring the world of Software Engineering & Web Development.</p>
-            <a href="wwr/about.html" class="btn">Learn More</a>
+            <h1>Adventure Awaits on the Rapids</h1>
+            <p>Experience the thrill of white water rafting with our expert guides.</p>
+            <a href="wwr/trips.html" class="btn">Explore Our Trips</a>
         </div>
     </section>
-
+    
     <main>
-        <section class="intro">
-            <div class="profile">
-                <img src="./wwr/images/Profile.jpeg" alt="Kinyera Alvine's profile picture">
-            </div>
-            <div class="bio">
-                <h2>Hi, I'm Kinyera Alvine</h2>
-                <p>A passionate software engineering student at BYU-Pathway Worldwide. I specialize in coding, web development, and problem-solving.</p>
-                <p>Join me on this journey as I build projects and develop my skills in WDD 130.</p>
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>Stay Updated on New Adventures</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">Sign Up Now</button>
+            </form>
+        </section>
+        
+        <!-- Grid Content Section -->
+        <section class="features">
+            <h2>Our Rafting Experiences</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="wwr/images/family-rafting.jpg" alt="Family Rafting Adventure">
+                    <h3>Family Friendly Adventures</h3>
+                    <p>Safe and exciting rafting experiences designed for families with children of all ages. Our expert guides ensure everyone has a memorable time while staying safe.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="wwr/images/extreme-rafting.jpg" alt="Extreme Rafting Adventure">
+                    <h3>Extreme Rapids Challenge</h3>
+                    <p>For thrill-seekers looking for an adrenaline rush, our extreme rapids packages offer the ultimate white water experience on the most challenging sections of the river.</p>
+                </div>
             </div>
         </section>
-
-        <section class="discover">
-            <h2>Discover Uganda</h2>
-            <div class="uganda">
-                <img src="./wwr/images/uganda.jpeg" alt="Beautiful landscape of Uganda">
-                <p>Uganda, known as the 'Pearl of Africa,' is a country rich in culture, breathtaking landscapes, and incredible wildlife. From the mighty Nile River to lush national parks, Uganda is a land of adventure.</p>
-            </div>
+        
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for Your Adventure?</h2>
+            <p>Discover our various rafting trips and choose the perfect adventure for you.</p>
+            <a href="wwr/trips.html" class="btn">View All Trips</a>
         </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 🌍 Kinyera Alvine 🌍 Uganda</p>
-        <p>&copy; 2024 Rafting Adventures | KINYERA ALVINE</p>
+        <p>&copy; 2025 Rafting Adventures | KINYERA ALVINE</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

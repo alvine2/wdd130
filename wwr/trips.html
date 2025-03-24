@@ -3,90 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exciting rafting trips, from beginner-friendly adventures to challenging expeditions. Find detailed information about trip duration, difficulty levels, and pricing.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Trips</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Rafting Adventures - Exciting Trips & Expeditions</title>
+    <link rel="stylesheet" href="styles/trips.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Explore Our Trips</h1>
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html" class="active">Trips</a>
-            <a href="contact.html">Contact</a>
+            <div>
+                <img src="images/logo.jpg" alt="Rafting Adventures Logo" class="logo">
+            </div>
+            <div>
+                <a href="/index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trips.html" class="active">Trips</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-
         <!-- Hero Section -->
         <section class="hero">
-            <img src="images/trip-hero.jpg" alt="Scenic Adventure">
             <div class="hero-text">
-                <h1>Your Next Adventure Awaits</h1>
-                <p>Join us on thrilling adventures across the world. Explore breathtaking destinations and create unforgettable memories.</p>
+                <h1>Your Next Rafting Adventure Awaits</h1>
+                <p>Join us on thrilling whitewater rafting adventures. Experience nature's power and create unforgettable memories.</p>
+                <a href="/wwr/contact.html" class="btn">Book Your Trip</a>
             </div>
         </section>
 
-        <!-- Trips Overview -->
-        <section class="history">
-            <h2>Why Travel With Us?</h2>
-            <p>We offer well-organized, budget-friendly, and adventure-packed trips to some of the most exciting places on Earth.</p>
-        </section>
-
-        <!-- Trip Categories -->
-        <section class="adventure">
-            <h2>Popular Trips</h2>
-            <div class="trip-cards">
-                <div class="trip-card">
-                    <img src="images/trip1.jpg" alt="Mountain Adventure">
-                    <h3>Mountain Expedition</h3>
-                    <p>Experience the thrill of high-altitude trekking and stunning landscapes.</p>
+        <!-- Featured Trips Section -->
+        <section>
+            <h2>Our Signature Rafting Expeditions</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/adventure3.jpg" alt="Beginner Rafting Experience">
+                    <h3>Beginner's Delight</h3>
+                    <p><strong>Difficulty:</strong> Easy</p>
+                    <p><strong>Duration:</strong> 3 hours</p>
+                    <p><strong>Price:</strong> UGX 75,000 per person</p>
+                    <p>Perfect for first-timers and families. Enjoy gentle rapids and beautiful scenery along the calm sections of Clear Creek River.</p>
                 </div>
-                <div class="trip-card">
-                    <img src="images/trip2.jpg" alt="Beach Getaway">
-                    <h3>Beach Getaway</h3>
-                    <p>Relax and unwind on pristine sandy beaches with crystal-clear waters.</p>
+                
+                <div class="grid-item">
+                    <img src="images/adventure2.jpg" alt="Intermediate Rafting Adventure">
+                    <h3>Rapids Challenge</h3>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Duration:</strong> 5 hours</p>
+                    <p><strong>Price:</strong> UGX 125,000 per person</p>
+                    <p>Step up the excitement with this half-day adventure featuring Class III-IV rapids. Navigate through thrilling white water sections.</p>
                 </div>
-                <div class="trip-card">
-                    <img src="images/trip3.jpg" alt="City Exploration">
-                    <h3>City Exploration</h3>
-                    <p>Discover vibrant city life, historical landmarks, and local cultures.</p>
-                </div>
-                <div class="trip-card">
-                    <img src="images/trip4.jpg" alt="Jungle Safari">
-                    <h3>Jungle Safari</h3>
-                    <p>Embark on a wildlife adventure and spot exotic animals in their natural habitat.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Upcoming Trips -->
-        <section class="upcoming-trips">
-            <h2>Upcoming Trips</h2>
-            <div class="trip-carousel">
-                <div class="trip-item">
-                    <img src="images/trip-guide1.jpg" alt="Safari Tour">
-                    <h3>Safari Tour</h3>
-                    <p>March 15 - Explore the African savannah and encounter amazing wildlife.</p>
-                </div>
-                <div class="trip-item">
-                    <img src="images/trip-guide2.jpg" alt="Hiking Adventure">
-                    <h3>Hiking Adventure</h3>
-                    <p>April 10 - Challenge yourself with a scenic and rewarding trek.</p>
-                </div>
-                <div class="trip-item">
-                    <img src="images/trip-guide3.jpg" alt="Island Retreat">
-                    <h3>Island Retreat</h3>
-                    <p>May 5 - Escape to a paradise island with beautiful beaches and luxury stays.</p>
+                
+                <div class="grid-item">
+                    <img src="images/adventure5.jpg" alt="Advanced Rafting Expedition">
+                    <h3>Canyon Explorer</h3>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <p><strong>Duration:</strong> Full day</p>
+                    <p><strong>Price:</strong> UGX 195,000 per person</p>
+                    <p>Our most challenging and rewarding experience. Tackle Class IV-V rapids through spectacular canyon formations.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Trip Summary Table -->
+        <section>
+            <h2>Trip Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Minimum Age</th>
+                        <th>Available Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner's Delight</td>
+                        <td>Easy (Class I-II)</td>
+                        <td>3 hours</td>
+                        <td>UGX750,000</td>
+                        <td>8 years</td>
+                        <td>Daily (May-September)</td>
+                    </tr>
+                    <tr>
+                        <td>Rapids Challenge</td>
+                        <td>Intermediate (Class III-IV)</td>
+                        <td>5 hours</td>
+                        <td>UGX125,000</td>
+                        <td>12 years</td>
+                        <td>Weekends (April-October)</td>
+                    </tr>
+                    <tr>
+                        <td>Canyon Explorer</td>
+                        <td>Advanced (Class IV-V)</td>
+                        <td>Full day</td>
+                        <td>UGX195,000</td>
+                        <td>16 years</td>
+                        <td>Tuesday & Saturday (June-August)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h3>Ready for Your Rafting Adventure?</h3>
+            <p>Our team is ready to help you plan the perfect rafting trip that matches your experience level and expectations.</p>
+            <a href="contact.html" class="btn">Contact Us To Book Now</a>
+        </section>
     </main>
 
     <!-- Footer -->
