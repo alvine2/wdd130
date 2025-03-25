@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,16 +8,12 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Footer */
+/* Header & Navbar */
 header {
     background: #003366;
     color: white;
     padding: 15px 0;
-}
-
-.logo {
-    height: 50px;
-    vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -26,28 +22,64 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1rem;
     padding: 10px 15px;
+    transition: color 0.3s, transform 0.2s;
+    position: relative;
 }
 
+/* Elegant Hover Effect */
 nav a:hover {
     color: #FFD700;
+    transform: scale(1.05);
 }
 
+/* Active Link Styling */
 nav a.active {
     border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+}
+
+/* Stylish Call-To-Action Button */
+.btn {
+    background: linear-gradient(45deg, #FFD700, #FFC300);
+    color: #003366;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(255, 215, 0, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #FFC300, #FFD700);
+    transform: scale(1.1);
 }
 
 /* Hero Section */
 .hero {
-    background: url('../images/extreme-rafting.jpg') center/cover no-repeat;
+    background: url('../images/adventure4.jpg') center/cover no-repeat;
     color: rgb(255, 255, 255);
     padding: 100px 20px;
     text-align: center;
@@ -61,7 +93,7 @@ nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-text {
@@ -90,10 +122,12 @@ nav a.active {
     margin: 40px auto;
     padding: 0 20px;
 }
+
 h2 {
     color: #003366;
     text-align: center;
     margin: 40px 0;
+    font-size: 2rem;
 }
 
 .grid-item {
@@ -134,6 +168,8 @@ table {
     border-collapse: collapse;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 thead {
@@ -145,6 +181,7 @@ td, th {
     padding: 12px 15px;
     border: 1px solid #ddd;
     text-align: center;
+    font-size: 1rem;
 }
 
 /* CTA Section */
@@ -175,24 +212,7 @@ td, th {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header, footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1.1rem;
-    }
-}
+/* Footer */
 footer {
     background: #003366;
     color: white;
@@ -215,27 +235,54 @@ footer {
     color: #FFD700;
 }
 
-/*button*/
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     color: black;
-    background-color: #FFD700; /* Blue background */
+    background: linear-gradient(45deg, #FFD700, #FFC300);
     border: none;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 10px rgba(255, 215, 0, 0.3);
 }
 
 .btn:hover {
-    background-color: #FFD700; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(45deg, #FFC300, #FFD700);
+    transform: scale(1.05);
 }
 
 .btn:active {
-    background-color: #FFD700; /* Even darker blue when clicked */
-    transform: scale(0.95); /* Slight shrink effect */
+    transform: scale(0.95);
 }
