@@ -1,4 +1,4 @@
-# White Water Rafting Website
+# BYU FINAL COURSE -White Water Rafting Website
 
 ## Project Overview
 A multi-page website for a white water rafting company, created as part of the WDD130 web development course.
